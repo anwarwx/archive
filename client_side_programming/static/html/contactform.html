@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="/main.css">
+        <script defer src="/js/contact.js"></script>
+        <script defer src="/js/main.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="main">GreenWrap Solutions</a>
+            <a href="testimonies">Testimonies</a>
+            <a href="contact">Contact Us</a>
+            <a href="admin/contactlog">Contact Log</a>
+            <button type="button" class="mode">Theme</button>
+        </nav>
+
+
+        <div id="contact_form">
+            <form action="contact" method="POST">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="name@domain.com" required>
+                </p>
+                <p>
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date">
+                </p>
+                <p>
+                    <label for="dropdown"></label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="option">Please choose an option</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="edge">Edge</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="opera">Opera</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="checkbox">Subscribe to our emails:</label>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                </p>
+                <p>
+                    <span id="placeholder"></span>
+                    <span id="calculation"></span>
+                </p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

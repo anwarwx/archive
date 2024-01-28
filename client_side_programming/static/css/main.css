@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Pixelify+Sans&family=Reenie+Beanie&display=swap');
+
+body {
+    margin: 0;
+    background-color: #EAE7DD;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    background-color: rgb(155, 189, 233);
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+
+    flex-wrap: wrap;
+    white-space: nowrap;
+
+    width: 100vw;
+}
+
+nav button {
+    margin-top: 1em;
+    font-size: small;
+    width: 5em;
+    height: 25px;
+}
+
+nav a {
+    color: blue;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: small;
+    text-decoration: none;
+    background-color: #F0F0F0;
+    border-radius: 3em;
+    padding: 0.5em 1.5em;
+    border: 2.5px solid #7480cc;
+    margin: 0.5em 1em;
+
+    overflow: hidden;
+}
+
+nav a:hover {
+    color: black;
+    background-color: whitesmoke;
+    border: 2.5px solid #1a2cdf;
+}
+
+p, table {
+    font-family: 'EB Garamond', serif;
+}
+
+/* main */
+div#sale_banner {
+    visibility: hidden;
+    width: 100vw;
+    margin-top: 1em;
+}
+div#sale_banner span {
+    background-color: crimson;
+    color: white;
+    width: max-content;
+    padding: 0.1em;
+    border-radius: 0.2em;
+}
+
+h1#company_title {
+    color: #00563F;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 7em;
+    text-align: center;
+    text-shadow: 2.5px 0px 0px black;
+
+    background-image: url('/images/box.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    margin-top: 0.5em;
+}
+
+section#about_me h2 {
+    color: black;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    margin-bottom: 2em;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+section#about_me img#company_logo {
+    width: 75vw;
+    margin: auto 12.5vw;
+    background-color: #4d4239a2;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+section#about_me div#company_info {
+    background-color: lightsteelblue;
+    text-align: justify;
+    border-radius: 1em;
+    padding: 0.5vw 1.5vw;
+    margin: auto 25vw;
+    margin-bottom: 2em;
+
+    overflow: hidden;
+}
+section#about_me div#company_info em { color: #5967d3; }
+section#about_me div#company_info strong { color: #1a2cdf; }
+
+/* testimonies */
+div#company_vid {
+    background-color: black;
+    text-align: center;
+
+    overflow: scroll;
+}
+
+div.testimonies {
+    display: flex;
+    text-align: justify;
+}
+
+div.testimonies div.review {
+    width: 45.8vw;
+    margin: 1vw;
+    border-radius: 1em;
+    padding: 0.5vw 1vw;
+    border: 0.1vw solid #7480cc;
+}
+
+div.review p.reviewer-name {
+    text-align: right;
+    font-style: italic;
+}
+
+/* contact form */
+div#contact_form {
+    background-color: lightsteelblue;
+    text-align: center;
+    width: 20em;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 1em;
+    max-width: 100%;
+}
+
+div#contact_form form {
+    text-align: justify;
+    padding: 0.5em 0 2em 1em;
+    overflow: auto;
+}
+
+/* contact log */
+div#set_sale {
+    background-color: lightgray;
+    width: max-content;
+    max-width: 100%;
+    border-radius: 1em;
+    margin: auto;
+    margin-top: 1em;
+}
+div#set_sale p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+}
+
+div#set_sale p#sale_p {
+    overflow: auto;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+div#set_sale p span {
+    margin: 5px;
+    margin-left: 0;
+}
+
+div#contact_log {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 2em;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.5em 0.5em;
+}
+
+tr:nth-child(even) {
+    background-color: lavender;
+}
+
+table caption {
+    color: #00563F;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 3em;
+    text-shadow: 1px 0px 0px black;
+}
+
+/* POST pages for /contact */
+img#confirm_gif {
+    width: 480px;
+    margin-left: calc(calc(100vw - 480px)/2);
+}
+
+img#error_gif {
+    width: 200px;
+    margin-left: calc(calc(100vw - 200px)/2);
+    margin-top: 3em;
+}

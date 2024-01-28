@@ -1,0 +1,12 @@
+path,file,type,status
+/,/html/mainpage.html,text/html,200
+/main,/html/mainpage.html,text/html,200
+/contact,/html/contactform.html,text/html,200
+/testimonies,/html/testimonies.html,text/html,200
+/admin/contactlog,,text/html,200
+/main.css,/css/main.css,text/css,200
+/main.dark.css,/css/main.dark.css,text/css,200
+/js/table.js,/js/table.js,text/javascript,200
+/js/contact.js,/js/contact.js,text/javascript,200
+/js/main.js,/js/main.js,text/javascript,200
+/js/sale.js,/js/sale.js,text/javascript,200
